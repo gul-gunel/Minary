@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="https://cdn.minary.net/static/favicon.ico" />
+	<link rel="stylesheet" href="bootstrap.css">
+	<!-- <link rel="stylesheet" href="css/setting.css"> -->
+	<link rel="stylesheet" href="css/collections.css">
+	<!-- FONTAWESOME CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<!-- Reveal -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<title>Collection</title>
+</head>
+
+<body>
+	<!-- navbar start -->
+	<nav class="navbar navbar-expand navbar-light fixed-top navbar-home attop">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="https://cdn.minary.net/static/img/logo.gif" /> <img
+				src="https://cdn.minary.net/static/img/minary.png" /></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<ul class="navbar-nav mr-auto ms-4">
+				<li class="nav-item"><a class="nav-link" href="collection.html">Collections</a></li>
+				<li class="nav-item"><a class="nav-link" href="marketplace.html">Marketplace</a></li>
+				<li class="nav-item"><a class="nav-link" href="faq.html">Help</a></li>
+			</ul>
+			<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ChooseChain">
+				<i class="mc-icon xs global"></i> Networks
+			</button>
+		</div>
+	</nav>
+	<div class="container-fluid fixed-top d-block d-md-none">
+		<div class="row special-nav align-items-center">
+			<div class="col">
+				<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#ChooseChain">
+					<span><i class="mc-icon xs global-b"></i><br />Networks</span>
+				</a>
+			</div>
+			<div class="col">
+				<a href="https://minary.net"><img src="https://cdn.minary.net/static/img/logo.gif" /></a>
+			</div>
+			<div class="col">
+				<a href="javascript:;" onclick="mobSideNav();">
+					<span><i id="header-menu" class="mc-icon xs menu"></i><br />Menu</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="mobileSidePanel" class="user-sidepanel">
+		<div class="mt-3 mb-2"></div>
+		<a href="#/my-profile"><i class="mc-icon assets"></i> Collections</a>
+		<hr />
+		<a href="#/my-collections"><i class="mc-icon marketplace"></i> Marketplace</a>
+		<hr />
+		<a href="#/my-settings"><i class="mc-icon help"></i> Help</a>
+	</div>
+	<!-- navbar finish -->
+
+	<main class="">
+		<div class="bg">
+			<div class="position">
+				<img class="img-fluid profil__img" src="img/ps/profile.jpg" alt="">
+				<input type="file" id="profileImg" name="profileImg" class="d-none" />
+				<label for="profileImg" class="" style="cursor: pointer;">
+					<img class="cam" src="img/ps/cam.png" alt="">
+				</label>
+			</div>
+		</div>
+
+		<div class="row py-4">
+			<div class="col-sm-12 col-md-6">
+				<div class="top-left d-flex justify-content-center">
+					<div class="top-left-box border-1 rounded p-1 mx-1">
+						<img class="top-left-img" src="img/collection/1.png" alt="">
+					</div>
+					<div class="top-left-box border-1 rounded p-1 mx-1">
+						<img class="top-left-img" src="img/collection/2.png" alt="">
+					</div>
+					<div class="top-left-box border-1 rounded p-1 mx-1">
+						<img class="top-left-img" src="img/collection/3.png" alt="">
+					</div>
+					<div class="top-left-box border-1 rounded p-1 mx-1">
+						<img class="top-left-img" src="img/collection/4.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<div class="top-right d-flex justify-content-center">
+					<a class="btn btn-sm me-3 xx">
+						<img class="top-right-img" src="img/collection/5.png" alt="">
+						Latest Sales
+					</a>
+					<a class="btn btn-sm">
+						<img class="top-right-img" src="img/collection/6.png" alt="">
+						Price History
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mx-auto pb-2 text-center">
+			<h1>MUTANT PUNK CITY</h1>
+			<span class="text-muted fst-italic col-lg-5 col-md-6 col-sm-10 col-11 mx-auto fs-5">"Lorem ipsum dolor sit
+				amet, consetetur
+				sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"</span>
+			<div class="row mt-3">
+				<div class="col-12 col-sm-11 col-md-8 col-lg-6 row m-auto">
+					<div class="col-sm-6 col-md-3">
+						<div class="cards py-2">
+							<div class="cards-body">
+								<h5 class="cards-title">Items
+									<span class="underline"></span>
+								</h5>
+								<span>750 / 1111</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="cards pt-2">
+							<div class="cards-body">
+								<h5 class="cards-title">Owners
+									<span class="underline"></span>
+								</h5>
+								<span>480</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="cards pt-2">
+							<div class="cards-body">
+								<h5 class="cards-title">Floor Price
+									<span class="underline"></span>
+								</h5>
+								<span>2.50 Bnb
+									<img class="ms-1 i_height img-fluid" src="img/collection/icon-bnb.png" alt="">
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="cards pt-2">
+							<div class="cards-body">
+								<h5 class="cards-title">Volume
+									<span class="underline"></span>
+								</h5>
+								<span>45.40 Bnb
+									<img class="ms-1 i_height img-fluid" src="img/collection/icon-bnb.png" alt="">
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row g-0 pt-3">
+			<div class="left col-lg-2 col-md-3 text-center px-2">
+				<h2 class="text-center">Filters<img class="img-filter img-fluid me-2" src="img/collection/filter.png"
+						alt=""></h2>
+				<div class="dropdown mt-5 mb-2 col-12">
+					<button class="btn btn-d dropdown-toggle" type="button" id="dropdownMenuButton2"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						My Aurory NFT's
+					</button>
+					<ul class="dropdown-menu d-width p-3" aria-labelledby="dropdownMenuButton2">
+						<div>
+							<div class="row">
+								<div class="col-6 d-flex flex-column p-2">
+									<img class="img_dropdown img-fluid mx-auto" src="img/collection/wallet.png" alt="">
+									<span>Unlisted</span>
+									<span class="underline"></span>
+								</div>
+								<div class="col-6 d-flex flex-column p-2">
+									<img class="img_dropdown img-fluid mx-auto" src="img/collection/basket.png" alt="">
+									<span>On Sale</span>
+									<span class="underline"></span>
+								</div>
+							</div>
+							<a href="#" class="btn btn-info my-3">Refresh</a>
+						</div>
+					</ul>
+				</div>
+				<div class="row mx-auto my-2">
+					<div class="col-6 ">
+						<label for="formGroupExampleInput" class="form-label">Min Price</label>
+						<input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+					</div>
+					<div class="col-6">
+						<label for="formGroupExampleInput" class="form-label">Max Price</label>
+						<input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+					</div>
+				</div>
+				<div class="row my-2">
+					<div class="col-6">
+						<div class="dropdown my-2 col-12">
+							<button class="btn btn-d dropdown-toggle btn-filter" type="button" id="dropdownMenuButton2"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fas fa-filter me-1"></i>
+								Filter
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+								<li><a class="dropdown-item" href="#">Fits All</a></li>
+								<li><a class="dropdown-item" href="#">Fits Any</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-6 d-flex align-items-center pe-2">
+						<i id="" class="far fa-heart fa-2x" onclick="toggleClass(this)"></i>
+						<span class="heart-text me-2">See Owned</span>  
+					</div>
+				</div>
+				<div class="dropdown my-2 col-12 dplay">
+					<button class="btn btn-d dropdown-toggle" type="button" id="dropdownMenuButton2"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						Attributes
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+					</ul>
+				</div> 
+				<div class="dropdown my-2 col-12 dplay">
+					<button class="btn btn-d dropdown-toggle" type="button" id="dropdownMenuButton2"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						Background
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+					</ul>
+				</div> 
+				<div class="dropdown my-2 col-12 dplay">
+					<button class="btn btn-d dropdown-toggle" type="button" id="dropdownMenuButton2"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						Skin
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+					</ul>
+				</div> 
+				<div class="dropdown my-2 col-12 dplay">
+					<button class="btn btn-d dropdown-toggle" type="button" id="dropdownMenuButton2"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						Clouth
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+					</ul>
+				</div> 
+				<div class="dropdown my-2 col-12 dplay">
+					<button class="btn btn-d dropdown-toggle" type="button" id="dropdownMenuButton2"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						Mouth
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+					</ul>
+				</div> 
+				<div class="dropdown my-2 col-12 dplay">
+					<button class="btn btn-d dropdown-toggle" type="button" id="dropdownMenuButton2"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						Eyes
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+					</ul>
+				</div> 
+				<div class="dropdown my-2 col-12 dplay">
+					<button class="btn btn-d dropdown-toggle" type="button" id="dropdownMenuButton2"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						Type
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+					</ul>
+				</div> 
+				<div class="dropdown my-2 col-12 dplay">
+					<button class="btn btn-d dropdown-toggle" type="button" id="dropdownMenuButton2"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						Hat
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+					</ul>
+				</div> 
+				<div class="dropdown my-2 col-12 dplay">
+					<button class="btn btn-d dropdown-toggle" type="button" id="dropdownMenuButton2"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						Hair
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+						<li><a class="dropdown-item" href="#"></a>...</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="right col-lg-10 col-md-9">
+				<div class="container row d-flex justify-content-between text-center">
+					<div class="col-lg-4 col-md-3 col-sm-12 d-flex align-items-center right-search">
+						
+							<input class="form-control" list="datalistOptions" id="exampleDataList"
+								placeholder="Search...">
+							<!-- <datalist id="datalistOptions">
+									<option value="a">
+									<option value="s">
+									<option value="d">
+									<option value="f">
+									<option value="g">
+								</datalist> -->
+						
+					</div>
+					<div class="col-md-4 col-lg-2">
+						<div class="dropdown col-12">
+							<button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton2"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fas fa-filter me-2"></i>
+								Filter By
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+								<li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+								<li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+								<li><a class="dropdown-item" href="#">Recently Added</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="nftsc" class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-3 p-3 m-3"></div>
+			</div>
+		</div>
+	</main>
+
+
+	<!-- navbar -->
+	<div class="modal fade" id="ChooseChain" tabindex="-1" aria-labelledby="ChooseChain" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body choose-chains">
+					<div class="row">
+						<div class="col-12">
+							<h2>Choose a Chain For Connection</h2>
+						</div>
+						<div class="col-6">
+							<a href="https://eth.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/eth.webp" />
+									<h3>Ethereum</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://bsc.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/bsc.gif" />
+									<h3>Binance</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://matic.minary.net" target="_blank">
+								<div><img src="	" />
+									<h3>Polygon</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://avax.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/avx.svg" />
+									<h3>Avalance</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/popper.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/collection.js"></script>
+
+
+</body>
+
+</html>

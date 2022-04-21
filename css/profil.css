@@ -1,0 +1,202 @@
+.navbar {
+	background: linear-gradient(to right bottom, rgba(253, 221, 253, 1) 0%, rgba(223, 251, 254, 1) 100%);
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+a, a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+main {
+	margin-top: 5.3rem;
+	color: #060000;
+}
+.left {
+	background-color: #EBF1FF;
+}
+.left-menu-list {
+	display: inline-block;
+}
+.left-menu-item {
+	transition: all .3s;
+}
+.left-menu-item:hover {
+	transform: scale(1.1);
+}
+.active {
+	border: 1px solid #000000;
+	border-radius: 8rem;
+}
+.left-icon {
+	height: 1.2rem;
+}
+.bg{	
+	background-image: url(../img/ps/bg.png);
+	height: 200px; 
+	background-size: contain; 
+	position: relative;
+	object-fit: cover;
+}
+.position {
+	position: absolute; 
+	top: 100%; 
+	left: 50%; 
+	transform: translate(-50%,-50%);
+}
+.profil__img {
+	width: 9rem;
+	height: 9rem;
+	object-fit: cover;
+	border-radius: 50%;
+
+	position: relative;
+}
+.cam {
+	width: 2.5rem;
+	position: absolute;
+	top: 70%;
+	right: 2%;
+}
+
+.searchIcons{
+	position: relative;
+}
+.searchIcons input{
+	padding-left: 2.5rem;
+}
+.searchIcons:before{
+	font-family:"Font Awesome 5 Brands";
+	content: "\f002";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 2%;
+	width: 24px;
+	height: 24px;
+	color: #983EA8;
+}
+label {
+	font-size: .9rem;
+}
+
+.links-icons {
+	color: #983EA8;
+	position: absolute;
+	margin-left: 8px;
+	margin-top: 5px;
+}
+
+.disable-icon {
+	width: 1.3rem;
+	position: absolute;
+	top: 55%;
+	right: 5%;
+}
+
+/* boot-5 */
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: #c1c6cc;
+	outline: 0;
+}
+
+
+
+
+
+.card-img-top{
+	min-height: 15rem;
+	max-height: 15rem;
+	object-fit: cover;
+}
+.card-body{
+	min-height: 10rem;
+	padding: .7rem .7rem;
+	
+}
+.card-title{
+	font-size: 1.1rem;
+}
+.icon-border{
+	border: 1px solid #707070;
+	border-radius: 18px;
+}
+#nftsp{
+	border: 1px solid #b8b5b5;
+	border-radius: 8px;
+}
+.nfts_icon1{
+	width: 1rem;
+}
+.text-muted{
+	font-size: .6rem;
+}
+.font-size{
+	font-size: .8rem;
+}
+.line-box{	
+    display: flex;
+    justify-content: center;
+}
+.line{
+	width: 1px;
+    background-color: #D6B34F;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.img_admin{
+	height: 3.2rem;
+	width: 3.2rem;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.fa-heart{
+	color: #D6B34F;
+}
+#dheart{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+	main {
+		margin-top: 3.8rem;
+	}
+	.setting{
+		padding-top: 3px;
+		padding-bottom: .1rem;
+	}
+}
+

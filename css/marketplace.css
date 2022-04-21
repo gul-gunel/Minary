@@ -1,0 +1,138 @@
+body{
+	background: linear-gradient(to bottom, rgba(232, 244, 254, 1) 0%, rgba(232, 244, 254, .8) 100%);
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+a:hover{
+	text-decoration: none;
+	color: #983EA8;
+}
+
+
+/* marketplace-best */
+.marketplace-best {
+	background: linear-gradient(to right bottom, rgba(253, 221, 253, 1) 0%, rgba(223, 251, 254, 1) 100%);
+	color: #333;
+	position: relative;
+	box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, .1);
+}
+.img-best {	
+	width: 5.875rem;
+	height: 5.875rem;
+	border-radius: 50%;
+	transition:all .5s;
+}
+.img-best:hover {	
+	transform: scale(1.12);
+}
+.img-ethereum {
+	width: .9rem;
+}
+.fa-heart{
+	color: #D6B34F;
+}
+.border-color{
+	border-radius: 2rem ;
+	border-color: #444343;
+}
+.arrow-circle-left{
+	width: 51.4px;
+	position: absolute;
+	bottom: 5%;
+	right: 4%;	
+	animation-name: fadeInOut;
+	animation-duration: 3s;
+	animation-iteration-count: 100000;
+	animation-delay: 2s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate-reverse;
+	animation-play-state: running;
+}
+/* fadeInOut: görünmez - görünür - görünmez*/
+@keyframes fadeInOut{
+	0%{
+		transform: translateY(100%);
+	}25%{
+		transform: translateY(40%);
+		
+	}50%{
+		transform: translateY(50%) scale(1.2);
+		
+	}75%{
+		transform: translateY(40%);
+		
+	}100%{
+		translate: translatey(0%);
+	}
+}
+
+
+/* marketplace-discover */
+.card{
+	position: relative;
+}
+.btn-icon{	
+	height: 1.3rem;	
+}
+.btn-icon1{
+	height: 1.4rem;	
+}
+.xx{
+	padding-left:  1.5rem;
+	padding-right:  1.5rem;
+}
+.marketplace-discover__top a:hover{
+	color: inherit;
+}
+
+.card-img-top{
+	min-height: 15rem;
+	max-height: 15rem;
+	object-fit: cover;
+}
+.card-body{
+	min-height: 10rem;
+	padding: .7rem .7rem;
+}
+.card-title{
+	font-size: 1.2rem;
+}
+.icon-border{
+	border: 1px solid #707070;
+	border-radius: 18px;
+}
+.nfts_icon1{
+	width: 1rem;
+}
+.text-muted{
+	font-size: .6rem;
+}
+.font-size{
+	font-size: .9rem;
+}
+.line-box{	
+    display: flex;
+    justify-content: center;
+}
+.line{
+	width: 1px;
+    background-color: #D6B34F;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.img_admin{
+	height: 3.2rem;
+	width: 3.2rem;
+	border-radius: 50%;
+	object-fit: cover;
+}
+#dheart{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+}

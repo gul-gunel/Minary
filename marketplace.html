@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="https://cdn.minary.net/static/favicon.ico" />
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="css/marketplace.css">
+	<!-- FONTAWESOME CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<!-- Reveal -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<title>marketplace</title>
+</head>
+
+<body>
+	<!-- navbar start -->
+	<nav class="navbar navbar-expand navbar-light fixed-top navbar-home attop">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="https://cdn.minary.net/static/img/logo.gif" /> <img
+					src="https://cdn.minary.net/static/img/minary.png" /></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<ul class="navbar-nav mr-auto ms-4">
+				<li class="nav-item"><a class="nav-link" href="collection.html">Collections</a></li>
+				<li class="nav-item"><a class="nav-link" href="marketplace.html">Marketplace</a></li>
+				<li class="nav-item"><a class="nav-link" href="faq.html">Help</a></li>
+			</ul>
+			<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ChooseChain">
+				<i class="mc-icon xs global"></i> Networks
+			</button>
+		</div>
+	</nav>
+	<div class="container-fluid fixed-top d-block d-md-none">
+		<div class="row special-nav align-items-center">
+			<div class="col">
+				<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#ChooseChain">
+					<span><i class="mc-icon xs global-b"></i><br />Networks</span>
+				</a>
+			</div>
+			<div class="col">
+				<a href="https://minary.net"><img src="https://cdn.minary.net/static/img/logo.gif" /></a>
+			</div>
+			<div class="col">
+				<a href="javascript:;" onclick="mobSideNav();">
+					<span><i id="header-menu" class="mc-icon xs menu"></i><br />Menu</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="mobileSidePanel" class="user-sidepanel">
+		<div class="mt-3 mb-2"></div>
+		<a href="#/my-profile"><i class="mc-icon assets"></i> Collections</a>
+		<hr />
+		<a href="#/my-collections"><i class="mc-icon marketplace"></i> Marketplace</a>
+		<hr />
+		<a href="#/my-settings"><i class="mc-icon help"></i> Help</a>
+	</div>
+	<!-- navbar finish -->
+
+	<!-- marketplace-best start -->
+	<div class="marketplace-best py-5 ">
+		<div class="container mt-5">
+			<div class="row">
+				<div class="marketplace-best__top colorfultext-gold">
+					<h1 class="colorfultext-gold py-1">MARKETPLACE</h1>
+				</div>
+
+				<div class="marketplace-best__bottom">
+					<div class="row d-flex justify-content-around py-4">
+						<div class="col-lg-5 border border-2 border-color p-3 d-flex flex-column justify-content-evenly ani-left">
+							<div class="d-flex justify-content-between pb-3">
+								<h3 class="colorfultext-gold">Top Collections</h3>
+								<div class="col-2">
+									<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+										<option selected>In: 1d ↓</option>
+										<option value="1">In: 7d ↓</option>
+										<option value="2">In: 30d ↓</option>
+									</select>
+								</div>
+							</div>
+							<div>
+								<div class=" mb-3">
+									<div class="row g-0 d-flex align-items-center">
+										<div class="col-1 colorfultext-gold fs-2 me-2">1.</div>
+										<div class="col-3 me-2">
+											<a href="#"><img src="img/mp/1.jpeg" class="img-fluid img-best"
+													alt="..."></a>
+										</div>
+										<div class="col-6">
+											<div class="body">
+												<h5 class="mb-1"><a href="#">Bored Ape Yacht</a></h5>
+												<p class="mb-1">Price</p>
+												<p class="mb-1">
+													<small class="text-muted">
+														<img class="img-fluid img-ethereum pe-1"
+															src="img/mp/icon-ethereum.png" alt="">
+														25,22
+													</small>
+												</p>
+											</div>
+										</div>
+										<div class="col-1 align-self-start mt-2">
+											<a href="#" class="like"><i class="far fa-heart fa-2x"
+													onclick="toggleClass(this)"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class=" mb-3">
+									<div class="row g-0 d-flex align-items-center">
+										<div class="col-1 colorfultext-gold fs-2 me-2">2.</div>
+										<div class="col-3 me-2">
+											<a href="#"><img src="img/mp/2.jpg" class="img-fluid img-best"
+													alt="..."></a>
+										</div>
+										<div class="col-6">
+											<div class="body">
+												<h5 class="mb-1"><a href="#">Bored Ape Yacht</a></h5>
+												<p class="mb-1">Price</p>
+												<p class="mb-1">
+													<small class="text-muted">
+														<img class="img-fluid img-ethereum pe-1"
+															src="img/mp/icon-ethereum.png" alt="">
+														25,22
+													</small>
+												</p>
+											</div>
+										</div>
+										<div class="col-1 align-self-start  mt-2">
+											<a href="#" class="like"><i class="far fa-heart fa-2x"
+													onclick="toggleClass(this)"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="">
+									<div class="row g-0 d-flex align-items-center">
+										<div class="col-1 colorfultext-gold fs-2 me-2">3.</div>
+										<div class="col-3 me-2">
+											<a href="#"><img src="img/mp/3.jpg" class="img-fluid img-best"
+													alt="..."></a>
+										</div>
+										<div class="col-6">
+											<div class="body">
+												<h5 class="mb-1"><a href="#">Bored Ape Yacht</a></h5>
+												<p class="mb-1">Price</p>
+												<p class="mb-1">
+													<small class="text-muted">
+														<img class="img-fluid img-ethereum pe-1"
+															src="img/mp/icon-ethereum.png" alt="">
+														25,22
+													</small>
+												</p>
+											</div>
+										</div>
+										<div class="col-1 align-self-start mt-2">
+											<a href="#" class="like"><i class="far fa-heart fa-2x"
+													onclick="toggleClass(this)"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class=" col-lg-5 border border-2 border-color p-3 d-flex flex-column justify-content-evenly ani-right">
+							<div class="d-flex justify-content-between pb-3">
+								<h3 class="colorfultext-gold">Top Collections</h3>
+								<div class="col-2">
+									<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+										<option selected>In: 1d ↓</option>
+										<option value="1">In: 7d ↓</option>
+										<option value="2">In: 30d ↓</option>
+									</select>
+								</div>
+							</div>
+							<div>
+								<div class=" mb-3">
+									<div class="row g-0 d-flex align-items-center">
+										<div class="col-1 colorfultext-gold fs-2 me-2">1.</div>
+										<div class="col-3 me-2">
+											<a href="#"><img src="img/mp/1.jpeg" class="img-fluid img-best"
+													alt="..."></a>
+										</div>
+										<div class="col-6">
+											<div class="body">
+												<h5 class="mb-1"><a href="#">Bored Ape Yacht</a></h5>
+												<p class="mb-1">Price</p>
+												<p class="mb-1">
+													<small class="text-muted">
+														<img class="img-fluid img-ethereum pe-1"
+															src="img/mp/icon-ethereum.png" alt="">
+														25,22
+													</small>
+												</p>
+											</div>
+										</div>
+										<div class="col-1 align-self-start mt-2">
+											<a href="#" class="like"><i class="far fa-heart fa-2x"
+													onclick="toggleClass(this)"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class=" mb-3">
+									<div class="row g-0 d-flex align-items-center">
+										<div class="col-1 colorfultext-gold fs-2 me-2">2.</div>
+										<div class="col-3 me-2">
+											<a href="#"><img src="img/mp/2.jpg" class="img-fluid img-best"
+													alt="..."></a>
+										</div>
+										<div class="col-6">
+											<div class="body">
+												<h5 class="mb-1"><a href="#">Bored Ape Yacht</a></h5>
+												<p class="mb-1">Price</p>
+												<p class="mb-1">
+													<small class="text-muted">
+														<img class="img-fluid img-ethereum pe-1"
+															src="img/mp/icon-ethereum.png" alt="">
+														25,22
+													</small>
+												</p>
+											</div>
+										</div>
+										<div class="col-1 align-self-start  mt-2">
+											<a href="#" class="like"><i class="far fa-heart fa-2x"
+													onclick="toggleClass(this)"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="">
+									<div class="row g-0 d-flex align-items-center">
+										<div class="col-1 colorfultext-gold fs-2 me-2">3.</div>
+										<div class="col-3 me-2">
+											<a href="#"><img src="img/mp/3.jpg" class="img-fluid img-best"
+													alt="..."></a>
+										</div>
+										<div class="col-6">
+											<div class="body">
+												<h5 class="mb-1"><a href="#">Bored Ape Yacht</a></h5>
+												<p class="mb-1">Price</p>
+												<p class="mb-1">
+													<small class="text-muted">
+														<img class="img-fluid img-ethereum pe-1"
+															src="img/mp/icon-ethereum.png" alt="">
+														25,22
+													</small>
+												</p>
+											</div>
+										</div>
+										<div class="col-1 align-self-start mt-2">
+											<a href="#" class="like"><i class="far fa-heart fa-2x"
+													onclick="toggleClass(this)"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<a href="#discover"><img class="arrow-circle-left" src="img/mp/icon-arrow.png" alt="" id="discover"></a>
+		</div>
+	</div>
+	<!-- marketplace-best finish -->
+
+	<!-- marketplace-discover start -->
+	<div class="marketplace-discover py-5">
+		<div class="marketplace-discover__top container">
+			<div class="row">
+				<div class="col-md-3">
+					<h2 class="colorfultext-gold">Discover</h2>
+				</div>
+				<div class="col-md-9">
+					<button class="btn btn-info me-1" type="button">
+						<a href="#">
+							<img class="img-fluid btn-icon1 me-1" src="img/mp/icon-ethereum.png" alt="">
+							Etherium
+						</a>
+					</button>
+					<button class="btn btn-info xx" type="button">
+						<a href="#">
+							<img class="img-fluid btn-icon me-1" src="img/mp/icon_bsc.png" alt="">
+							Bsc
+						</a>
+					</button>
+					<div class="dropdown float-end">
+						<button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton2"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="fas fa-filter me-2"></i>
+							Filter By
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+							<li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+							<li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+							<li><a class="dropdown-item" href="#">Recently Added</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="marketplace-discover__bottom container my-5">
+			<div id="ntfs" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 g-4">
+				
+			</div>
+		</div>
+	</div>
+	<!-- marketplace-discover finish -->
+
+	<!-- navbar -->
+	<div class="modal fade" id="ChooseChain" tabindex="-1" aria-labelledby="ChooseChain" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body choose-chains">
+					<div class="row">
+						<div class="col-12">
+							<h2>Choose a Chain For Connection</h2>
+						</div>
+						<div class="col-6">
+							<a href="https://eth.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/eth.webp" />
+									<h3>Ethereum</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://bsc.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/bsc.gif" />
+									<h3>Binance</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://matic.minary.net" target="_blank">
+								<div><img src="	" />
+									<h3>Polygon</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://avax.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/avx.svg" />
+									<h3>Avalance</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/popper.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/marketplace.js"></script>
+</body>
+
+</html>

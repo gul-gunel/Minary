@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="https://cdn.minary.net/static/favicon.ico" />
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="css/profil.css">
+	<!-- FONTAWESOME CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<!-- Reveal -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<title>Profile</title>
+</head>
+
+<body>
+	<!-- navbar start -->
+	<nav class="navbar navbar-expand navbar-light fixed-top navbar-home attop">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="https://cdn.minary.net/static/img/logo.gif" /> <img
+					src="https://cdn.minary.net/static/img/minary.png" /></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<ul class="navbar-nav mr-auto ms-4">
+				<li class="nav-item"><a class="nav-link" href="collection.html">Collections</a></li>
+				<li class="nav-item"><a class="nav-link" href="marketplace.html">Marketplace</a></li>
+				<li class="nav-item"><a class="nav-link" href="faq.html">Help</a></li>
+			</ul>
+			<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ChooseChain">
+				<i class="mc-icon xs global"></i> Networks
+			</button>
+		</div>
+	</nav>
+	<div class="container-fluid fixed-top d-block d-md-none">
+		<div class="row special-nav align-items-center">
+			<div class="col">
+				<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#ChooseChain">
+					<span><i class="mc-icon xs global-b"></i><br />Networks</span>
+				</a>
+			</div>
+			<div class="col">
+				<a href="https://minary.net"><img src="https://cdn.minary.net/static/img/logo.gif" /></a>
+			</div>
+			<div class="col">
+				<a href="javascript:;" onclick="mobSideNav();">
+					<span><i id="header-menu" class="mc-icon xs menu"></i><br />Menu</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="mobileSidePanel" class="user-sidepanel">
+		<div class="mt-3 mb-2"></div>
+		<a href="#/my-profile"><i class="mc-icon assets"></i> Collections</a>
+		<hr />
+		<a href="#/my-collections"><i class="mc-icon marketplace"></i> Marketplace</a>
+		<hr />
+		<a href="#/my-settings"><i class="mc-icon help"></i> Help</a>
+	</div>
+	<!-- navbar finish -->
+
+	<main>
+		<div class="row g-0">
+			<div class="left col-lg-2 col-md-4 text-center ">
+				<h1 class="py-5 fw-bolder fs-2">Your Profile</h1>
+				<ul class="left-menu-list">
+					<li class="left-menu-item py-2 pe-5 mb-3 text-start fw-bolder active">
+						<img class="left-icon px-2" src="img/p/l1.png" alt="">
+						<a href="#">Collected</a>
+					</li>
+					<li class="left-menu-item py-2 pe-5 mb-3 text-start fw-bolder">
+						<img class="left-icon px-2" src="img/p/l2.png" alt="">
+						<a href="#">Favorited</a>
+					</li>
+					<li class="left-menu-item py-2 pe-5 mb-3 text-start fw-bolder">
+						<img class="left-icon px-2" src="img/p/l3.png" alt="">
+						<a href="#">Hidden</a>
+					</li>
+					<li class="left-menu-item py-2 pe-5 mb-3 text-start fw-bolder">
+						<img class="left-icon px-2" src="img/p/l4.png" alt="">
+						<a href="#">Activity</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="right col-lg-10 col-md-8">
+				<div class="bg">
+					<div class="position">
+						<img class="img-fluid profil__img" src="img/ps/profile.jpg" alt="">
+						<input type="file" id="profileImg" name="profileImg" class="d-none" />
+						<label for="profileImg" class="" style="cursor: pointer;">
+							<img class="cam" src="img/ps/cam.png" alt="">
+						</label>
+					</div>
+
+				</div>
+
+				<div class="container p-5 mt-4">
+					<div class="row py-5">
+						<div class="col-md-3">
+							<h2 class="colorfultext-gold">Collected</h2>
+						</div>
+						<div class="col-md-9 ">
+							<div class="row float-end">
+								<div class="col-6 d-flex align-items-center searchIcons">
+									<!-- <label for="exampleDataList" class="form-label">Datalist example</label> -->
+									<input class="form-control" list="datalistOptions" id="exampleDataList"
+										placeholder="Search...">
+									<!-- <datalist id="datalistOptions">
+										<option value="a">
+										<option value="s">
+										<option value="d">
+										<option value="f">
+										<option value="g">
+									</datalist> -->
+								</div>
+
+								<div class="dropdown col-6">
+									<button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton2"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="fas fa-filter me-2"></i>
+										Filter By
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+										<li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+										<li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+										<li><a class="dropdown-item" href="#">Recently Added</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="nftsp" class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-4 g-2 px-3 py-3">
+
+					</div>
+				</div>
+			</div>
+	</main>
+
+	<div class="modal fade" id="ChooseChain" tabindex="-1" aria-labelledby="ChooseChain" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body choose-chains">
+					<div class="row">
+						<div class="col-12">
+							<h2>Choose a Chain For Connection</h2>
+						</div>
+						<div class="col-6">
+							<a href="https://eth.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/eth.webp" />
+									<h3>Ethereum</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://bsc.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/bsc.gif" />
+									<h3>Binance</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://matic.minary.net" target="_blank">
+								<div><img src="	" />
+									<h3>Polygon</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://avax.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/avx.svg" />
+									<h3>Avalance</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/popper.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/profile.js	"></script>
+</body>
+
+</html>

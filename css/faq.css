@@ -1,0 +1,49 @@
+body {
+	background: linear-gradient(to right bottom, rgba(253, 221, 253, 1) 0%, rgba(223, 251, 254, 1) 100%);
+	height: 100vh;
+	color: #000 !important;
+}
+
+/* .navbar {
+	background: linear-gradient(to right bottom, rgba(253, 221, 253, 1) 0%, rgba(223, 251, 254, 1) 100%);
+} */
+.accordion-button:not(.collapsed) {
+	color: #000 !important;
+	background: linear-gradient(to right bottom, rgba(253, 221, 253, 1) 0%, rgba(223, 251, 254, 1) 100%);
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+.accordion-button:focus {
+	z-index: 3;
+	border-color: rgba(223, 251, 254, 1);
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem rgba(223, 251, 254, .25);
+}
+
+.faq-title{
+	color: #fff;
+	font-size: 4rem;
+	text-shadow: 5px 3px 6px rgba(0,0,0,.125);
+}
+
+
+.colorfultext {
+	color: transparent;
+	background: linear-gradient(to left, #D4BF71, #E6C355, #D6B34F, #F1E783, #E5C05A);
+	background-size: 1000px 100%;
+	animation: colorfultext 25s cubic-bezier(0.91, 0.07, 0, 0.85) infinite;
+	background-clip: text;
+	-webkit-background-clip: text;
+	text-align:center;
+}
+
+.bg{
+	background-color: #f8f6ed;
+}
+.question{
+	width: 4rem;
+	height: 4rem;
+	object-fit: cover;
+}
+.fw{	
+	font-size: .9rem;
+}

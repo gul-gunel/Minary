@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="icon" type="image/x-icon" href="https://cdn.minary.net/static/favicon.ico" />
+	<!-- <link href="https://cdn.minary.net/static/chunk.minary.css" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="bootstrap.css">
+	<meta name="author" content="" />
+	<meta name="description"
+		content="Discover, mint and collect NFTs! Unique collectible random assets with proof of ownership stored on the blockchains." />
+	<title>Minary - Discover, mint & collect NFTs!</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand navbar-light fixed-top navbar-home attop">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="https://cdn.minary.net/static/img/logo.gif" /> <img
+					src="https://cdn.minary.net/static/img/minary.png" /></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<ul class="navbar-nav mr-auto ms-4">
+				<li class="nav-item"><a class="nav-link" href="collection.html">Collections</a></li>
+				<li class="nav-item"><a class="nav-link" href="marketplace.html">Marketplace</a></li>
+				<li class="nav-item"><a class="nav-link" href="faq.html">Help</a></li>
+			</ul>
+			<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ChooseChain">
+				<i class="mc-icon xs global"></i> Networks
+			</button>
+		</div>
+	</nav>
+	<div class="container-fluid fixed-top d-block d-md-none">
+		<div class="row special-nav align-items-center">
+			<div class="col">
+				<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#ChooseChain">
+					<span><i class="mc-icon xs global-b"></i><br />Networks</span>
+				</a>
+			</div>
+			<div class="col">
+				<a href="https://minary.net"><img src="https://cdn.minary.net/static/img/logo.gif" /></a>
+			</div>
+			<div class="col">
+				<a href="javascript:;" onclick="mobSideNav();">
+					<span><i id="header-menu" class="mc-icon xs menu"></i><br />Menu</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="mobileSidePanel" class="user-sidepanel">
+		<div class="mt-3 mb-2"></div>
+		<a href="#/my-profile"><i class="mc-icon assets"></i> Collections</a>
+		<hr />
+		<a href="#/my-collections"><i class="mc-icon marketplace"></i> Marketplace</a>
+		<hr />
+		<a href="#/my-settings"><i class="mc-icon help"></i> Help</a>
+	</div>
+
+	<div class="header">
+
+		<div class="inner-header flex">
+			<div>
+				<h1>Discover, mint and collect <span class="colorfultext-gold">NFT</span>s!</h1>
+				<p>In future, telling the stories of nft artist's in art history book will be normal. Those artists will
+					come out on Minary.</p>
+				<br />
+				<a href="https://minary.net/about-us" class="btn btn-outline-info">Learn More</a>
+			</div>
+		</div>
+
+		<div>
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+					<path id="gentle-wave"
+						d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">
+					<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+					<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+					<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+					<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+				</g>
+			</svg>
+		</div>
+
+	</div>
+
+	<div class="container mt-5">
+		<div class="airdrop">
+			<a href="#"><img src="https://cdn.minary.net/static/img/airdrop.gif" /></a>
+		</div>
+	</div>
+
+	<div class="container collections">
+		<h2 class="colorfultext-gold">Coming Soon</h2>
+		<div class="row mt-4">
+			<div class="col-md-4"><a href="#art">
+					<div class="home-collections">
+						<div class="catimg"><i data-bs-toggle="tooltip" data-bs-placement="left" title="Binance"
+								class="chain polygon"></i>
+							<img src="https://cdn.minary.net/assets/collections/john-doe.jpg">
+						</div>
+						<div class="cattxt">
+							<h5>John Doe</h5>
+							<h6 date-type="left" id="time-1">
+								<span class="date">2021/11/20 20:00:00 UTC</span>
+								<i class="timer"><span id="timer-days"></span><span id="timer-hours"></span><span
+										id="timer-minutes"></span><span id="timer-seconds"></span> left</i>
+							</h6>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4"><a href="#nature">
+					<div class="home-collections">
+						<div class="catimg"><i data-bs-toggle="tooltip" data-bs-placement="left" title="Binance"
+								class="chain binance"></i>
+							<img src="https://cdn.minary.net/assets/collections/winlets-jackpot.jpg">
+						</div>
+						<div class="cattxt">
+							<h5>Winlet's Jackpot</h5>
+							<h6 date-type="left" id="time-2">
+								<span class="date">2021/11/29 19:00:00 UTC</span>
+								<span id="timer-days"></span><span id="timer-hours"></span><span
+									id="timer-minutes"></span><span id="timer-seconds"></span> left
+							</h6>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4"><a href="#nature">
+					<div class="home-collections">
+						<div class="catimg">
+							<img src="https://cdn.minary.net/assets/collections/next.jpg">
+						</div>
+						<div class="cattxt">
+							<h5>Click For Apply</h5>
+							<h6>We are waiting...</h6>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container home-howto">
+		<div class="htbox">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="https://cdn.minary.net/static/icons/wallet-c.png" />
+					<h3>Connect your wallet</h3>
+					<p>Connect the wallet of your choice by clicking the wallet icon in the top right corner.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="https://cdn.minary.net/static/icons/box-c.png" />
+					<h3>Collect NFTs</h3>
+					<p>Browse the collections and mint or buy the NFT you want in a few clicks.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="https://cdn.minary.net/static/icons/nft-c.png" />
+					<h3>List & Sell NFTs</h3>
+					<p>Easily exhibit and sell the NFTs of the collections listed on Minary.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container support-chains">
+		<div class="row">
+			<div class="col-md d-none d-md-block">
+				<h5>Ethereum</h5>
+				<h5>Binance</h5>
+				<h5>Avalanche</h5>
+				<h5>Polygon</h5>
+			</div>
+			<div class="col-md-7">
+				<img src="https://cdn.minary.net/static/img/footer-chains.webp" />
+			</div>
+			<div class="col-md d-none d-md-block">
+				<h5>Fantom</h5>
+				<h5>Heco</h5>
+				<h5>Arbitrum</h5>
+				<h5>XDAI</h5>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer-59391">
+		<div class="border-bottom pb-5 mb-4">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-3">
+						<ul class="list-unstyled nav-links social nav-right text-lg-start">
+							<li><a href="https://twitter.com/minarynft" target="_blank" rel="nofollow"><span><i
+											class="mc-icon xs twitter"></i></span></a></li>
+							<li><a href="https://instagram.com/minarynft" target="_blank" rel="nofollow"><span><i
+											class="mc-icon xs instagram"></i></span></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-6 text-lg-center">
+						<ul class="list-unstyled nav-links nav-left mb-4 mb-lg-0">
+							<li><a href="https://eth.minary.net" target="_blank">Ethereum</a></li>
+							<li><a href="https://bsc.minary.net" target="_blank">Binance</a></li>
+							<li><a href="https://matic.minary.net" target="_blank">Polygon</a></li>
+							<li><a href="https://avax.minary.net" target="_blank">Avalanche</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<ul class="list-unstyled nav-links social nav-right text-lg-end">
+							<li><a href="https://t.me/minarynft" target="_blank" rel="nofollow"><span><i
+											class="mc-icon xs telegram"></i></span></a></li>
+							<li><a href="https://discord.gg/minary" target="_blank" rel="nofollow"><span><i
+											class="mc-icon xs discord"></i></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-4 text-lg-center site-logo order-1 order-lg-2 mb-1 mb-lg-0">
+					<a href="#" class="m-0 p-0"><img src="https://cdn.minary.net/static/img/minary.png" /></a>
+				</div>
+				<div class="col-lg-4 order-2 order-lg-1 mb-1 mb-lg-0">
+					<ul class="list-unstyled nav-links m-0 nav-left">
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 text-lg-end order-3 order-lg-3">
+					<p class="m-0 text-muted"><small>&copy; 2021. All Rights Reserved.</small></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<div class="modal fade" id="ChooseChain" tabindex="-1" aria-labelledby="ChooseChain" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body choose-chains">
+					<div class="row">
+						<div class="col-12">
+							<h2>Choose a Chain For Connection</h2>
+						</div>
+						<div class="col-6">
+							<a href="https://eth.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/eth.webp" />
+									<h3>Ethereum</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://bsc.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/bsc.gif" />
+									<h3>Binance</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://matic.minary.net" target="_blank">
+								<div><img src="	" />
+									<h3>Polygon</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://avax.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/avx.svg" />
+									<h3>Avalance</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- <script src="https://cdn.minary.net/static/chunk.minary.js"></script> -->
+	<script src="js/script.js"></script>
+
+</body>
+</html>

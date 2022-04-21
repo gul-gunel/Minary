@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="icon" type="image/x-icon" href="https://cdn.minary.net/static/favicon.ico" />
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="css/setting.css">
+	<!-- FONTAWESOME CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<title>Profile Setting</title>
+</head>
+
+<body>
+	<!-- navbar start -->
+	<nav class="navbar navbar-expand navbar-light fixed-top navbar-home attop">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="https://cdn.minary.net/static/img/logo.gif" /> <img
+					src="https://cdn.minary.net/static/img/minary.png" /></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<ul class="navbar-nav mr-auto ms-4">
+				<li class="nav-item"><a class="nav-link" href="#">Collections</a></li>
+				<li class="nav-item"><a class="nav-link" href="marketplace.html">Marketplace</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+			</ul>
+			<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ChooseChain">
+				<i class="mc-icon xs global"></i> Networks
+			</button>
+		</div>
+	</nav>
+	<div class="container-fluid fixed-top d-block d-md-none">
+		<div class="row special-nav align-items-center">
+			<div class="col">
+				<a href="javascript:;" data-bs-toggle="modal" data-bs-target="#ChooseChain">
+					<span><i class="mc-icon xs global-b"></i><br />Networks</span>
+				</a>
+			</div>
+			<div class="col">
+				<a href="https://minary.net"><img src="https://cdn.minary.net/static/img/logo.gif" /></a>
+			</div>
+			<div class="col">
+				<a href="javascript:;" onclick="mobSideNav();">
+					<span><i id="header-menu" class="mc-icon xs menu"></i><br />Menu</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="mobileSidePanel" class="user-sidepanel">
+		<div class="mt-3 mb-2"></div>
+		<a href="#/my-profile"><i class="mc-icon assets"></i> Collections</a>
+		<hr />
+		<a href="#/my-collections"><i class="mc-icon marketplace"></i> Marketplace</a>
+		<hr />
+		<a href="#/my-settings"><i class="mc-icon help"></i> Help</a>
+	</div>
+	<!-- navbar finish -->
+
+	<section class="sec" >
+		<div class="settings row g-0">
+			<div class="left col-lg-2 col-md-4 text-center">
+				<h1 class="setting py-5 fw-bolder setting">Settings</h1>
+				<ul class="left-menu-list">
+					<li class="left-menu-item py-2 mb-3 text-start fw-bolder active">
+						<img class="left-icon px-2" src="img/ps/l1.png" alt="">
+						<a href="#">Profile</a>
+					</li>
+					<li class="left-menu-item py-2 mb-3 text-start fw-bolder">
+						<img class="left-icon px-2" src="img/ps/l2.png" alt="">
+						<a href="#">Notifications</a>
+					</li>
+					<li class="left-menu-item py-2 mb-3 text-start fw-bolder">
+						<img class="left-icon px-2" src="img/ps/l3.png" alt="">
+						<a href="#">Balance</a>
+					</li>
+					<li class="left-menu-item py-2 mb-3 text-start fw-bolder">
+						<img class="left-icon px-2" src="img/ps/l4.png" alt="">
+						<a href="#">Security Settings</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="right col-lg-10 col-md-8">
+				<div class="bg">
+					<!-- <img class="img-fluid" src="img/ps/bg.png" alt=""> -->
+					
+					<div class="position">
+						<img class="img-fluid profil__img" src="img/ps/profile.jpg" alt="">
+						<input type="file" id="profileImg" name="profileImg" class="d-none"/>
+						<label for="profileImg" class="" style="cursor: pointer;">
+							<img class="cam" src="img/ps/cam.png" alt="">
+						</label>
+					</div>
+					
+					<input type="file" id="bgChange" name="bgChange" class="d-none"/>
+					<label for="bgChange" class="bgChange" style="cursor: pointer;">
+						<h class="btn btn-info bgChange-text" >Change Cover</h>
+					</label>
+				</div>	
+
+				<div class="marketplace-discover__bottom container p-4 ">
+					<div class="row p-5 mt-3" >
+						<div class="col-lg-6">
+							<div class="row mb-3">
+								<div class="col-lg-6">
+									<label for="formGroupExampleInput" class="form-label">First Name</label>
+									<input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+								</div>
+
+								<div class="col-lg-6">
+									<label for="formGroupExampleInput" class="form-label">Last Name</label>
+									<input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+								</div>
+							</div>
+							<div class="col-12 mb-3">
+								<label for="inputEmail4" class="form-label">Email</label>
+								<input type="email" class="form-control" id="inputEmail4">
+							</div>
+							<div class="col-12" style="position: relative;">
+								<label for="inputAddress2" class="form-label">Links</label>
+								<div class="twitterIcons">
+									<input class="form-control mb-2" type="text" placeholder="Twitter" aria-label="default input example"/>
+								</div>
+								<div class="instagramIcons">
+									<input class="form-control mb-2" type="text" placeholder="Instagram" aria-label="default input example"/>
+								</div>
+								
+								<div class="websiteIcons">
+									<input class="form-control mb-2" type="text" placeholder="Your Website" aria-label="default input example"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="col-12">
+								<label for="exampleFormControlTextarea1" class="form-label">Bio</label>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+							</div>
+							<div class="col-12" style="position: relative;">
+								<label for="formGroupExampleInput" class="form-label">First Name</label>
+								<img class="disable-icon" src="img/ps/r4.png" alt="">
+								<input id="disabledInput" type="text" class="form-control" id="formGroupExampleInput" disabled
+									placeholder="0x6dbedf09ac4a459348833eadfe72695f7a32bf4b">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="modal fade" id="ChooseChain" tabindex="-1" aria-labelledby="ChooseChain" aria-hidden="true>
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body choose-chains">
+					<div class="row">
+						<div class="col-12">
+							<h2>Choose a Chain For Connection</h2>
+						</div>
+						<div class="col-6">
+							<a href="https://eth.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/eth.webp" />
+									<h3>Ethereum</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://bsc.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/bsc.gif" />
+									<h3>Binance</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://matic.minary.net" target="_blank">
+								<div><img src="	" />
+									<h3>Polygon</h3>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="https://avax.minary.net" target="_blank">
+								<div><img src="https://cdn.minary.net/static/connect/avx.svg" />
+									<h3>Avalance</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
